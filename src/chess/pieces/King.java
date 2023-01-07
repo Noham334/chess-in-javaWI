@@ -15,6 +15,8 @@ public class King extends ChessPiece {
         return "K";
     }
 
+    //Metodo que marca os movimentos possiveis que uma peça possa dar
+    //usando como base um metodo abstrato e fazendo um metodo concreto
     @Override
     public boolean[][] possibleMoves() {
         boolean[][] mat = new boolean[getBoard().getRows()][getBoard().getColumns()];
